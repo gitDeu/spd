@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPD - Sozialdemokratische Partei Deutschlands: Für eine gerechte und solidarische Zukunft</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="icon" href="flag.svg" type="image/svg+xml" sizes="any"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #F44336;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 10px auto; /* Update margin to 10px and center align */
+      padding: 2rem;
+      background-color: #FFFFFF;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .text-red {
+      color: #F44336;
+    }
+
+    .highlight {
+      background-color: #FFFF00;
+      padding: 2px;
+    }
+
+    /* Add flexbox styles to center align text */
+    .flex-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+    img{
+      -webkit-border-top-left-radius: 20px;
+-webkit-border-top-right-radius: 70px;
+-webkit-border-bottom-right-radius: 20px;
+-webkit-border-bottom-left-radius: 50px;
+-moz-border-radius-topleft: 20px;
+-moz-border-radius-topright: 70px;
+-moz-border-radius-bottomright: 20px;
+-moz-border-radius-bottomleft: 50px;
+border-top-left-radius: 20px;
+border-top-right-radius: 70px;
+border-bottom-right-radius: 20px;
+border-bottom-left-radius: 50px;
+    }
+  </style>
+</head>
+<body onload="generateRandomText()">
+  <div class="flex-center">
+    <div class="container">
+      <h1 style="font-family: 'Roboto Slab', serif;" class="text-3xl font-bold mb-4 text-red">Deutsche-Partei, 🇩🇪</h1>
+      <img style="width: 70%;" src="spd.png" alt="Bild" class="mb-4">
+      <h2 style="font-family: 'Roboto Slab', serif;" class="text-2xl font-bold mb-2 text-red">SPD-Generator</h2>
+      <b><p style="font-family: 'Roboto Slab', serif;" class="mb-4">Intelligente Inhalte auf Knopfdruck!</p></b>
+      <p style="font-family: 'Roboto Slab', serif;" class="mb-4">Gelangweilt von sogenannten Fakten und diesen blöden Klimaklebern? Sind Sie einfach unzufrieden mit der Gesamtsituation? Egal ob noch Schwurbel-Einsteiger und oder schon alter Silberrücken dem nicht mehr einfällt was er seinen Enkeln eigentlich erzählen wollte, dieser Generator kann auch Ihnen die lästige und ohnehin überflüssige Recherche abnehmen.</p>
+      <em style="font-weight: bold; color: gray;font-family: 'Roboto Slab', serif;">Dann haben wir hier die Lösung für Sie.</em>
+      <p style="font-family: 'Roboto Slab', serif;" class="mb-4">SPD: Jeder ist gleich, egal ob Muslim, Christ oder sonstige Religion. Wir beurteilen niemanden aufgrund seiner religiösen Kleidung und respektieren jeden.</p>
+      <strong style="font-family: 'Roboto Slab', serif;">Durch die Nutzung dieser Seite gebe ich meine Zustimmung, meinen gesunden Menschenverstand einzusetzen und mein Gehirn aktiv zu nutzen.</strong><br>
+      <button style="font-family: 'Roboto Slab', serif;font-weight: 400;" id="generateBtn" class="bg-red-500 hover:bg-red-700 text-white py-2 px-4 rounded">Jetzt Generieren</button>
+      <p style="font-family: 'Roboto Slab', serif;" id="generatedText" class="mt-2 text-red"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
